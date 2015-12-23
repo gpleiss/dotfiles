@@ -1,5 +1,8 @@
-export ZSH=/home/gpleiss/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
+
+# Path
+source ~/.zsh_path
 
 # Completion options
 CASE_SENSITIVE="false"
@@ -10,15 +13,8 @@ ENABLE_CORRECTION="false"
 DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
-# Path
-export PATH=""
-export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:/usr/local/bin"
-export PATH="$PATH:/usr/bin"
-export PATH="$PATH:/opt/cuda/bin"
-export PATH="$PATH:/usr/bin/site_perl"
-export PATH="$PATH:/usr/bin/vendor_perl"
-export PATH="$PATH:/usr/bin/core_perl"
+# Torch
+. $HOME/torch/install/bin/torch-activate
 
 # Editor
 export VISUAL='vim'
