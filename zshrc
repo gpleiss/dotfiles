@@ -16,6 +16,10 @@ export UPDATE_ZSH_DAYS=13
 # Torch
 . $HOME/torch/install/bin/torch-activate
 
+# Virtual env
+source /usr/local/bin/virtualenvwrapper.sh
+export PIP_REQUIRE_VIRTUALENV=true
+
 # Editor
 export VISUAL='vim'
 if [[ -n $SSH_CONNECTION ]]; then
