@@ -17,7 +17,7 @@ export UPDATE_ZSH_DAYS=13
 . $HOME/torch/install/bin/torch-activate
 
 # Virtual env
-source /usr/local/bin/virtualenvwrapper.sh
+source virtualenvwrapper.sh
 export PIP_REQUIRE_VIRTUALENV=true
 
 # Editor
