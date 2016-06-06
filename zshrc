@@ -30,6 +30,7 @@ fi
 
 # Plugins
 plugins=(git)
+zstyle :omz:plugins:ssh-agent identities id_rsa
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_aliases
