@@ -32,6 +32,9 @@ fi
 plugins=(git)
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
+# Gitignore.io
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_aliases
 source ~/.zsh_variables
