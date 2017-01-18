@@ -25,7 +25,7 @@ else
 fi
 
 # Plugins
-plugins=(git)
+plugins=(git tmux)
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # Gitignore.io
