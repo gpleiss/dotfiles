@@ -1,5 +1,5 @@
 ### Font
-font.family : serif
+font.family : Times
 font.size : 12.0
 
 ### Text
@@ -13,8 +13,8 @@ lines.antialiased : True
 axes.facecolor : f8f8f8
 axes.edgecolor : 777777
 axes.linewidth : 1
-axes.titlesize : x-large
-axes.labelsize : large
+axes.titlesize : medium
+axes.labelsize : medium
 # axes.labelcolor : 111111
 axes.axisbelow : True
 #axes.color_cycle : 348ABD, 7A68A6, A60628, 467821, CF4457, 188487, E24A33
@@ -38,12 +38,17 @@ ytick.direction      : in     # direction: in or out
 
 ### Grid settings
 axes.grid : True
-grid.alpha : 0.5
+grid.alpha : 0.3
+grid.linewidth : 1
 
 ### Legend
 legend.fancybox : True
+legend.fontsize : Small
 
 ### Figure
-figure.figsize : 5, 3
+figure.figsize : 2.5, 2.5
 figure.facecolor : 1.0
 figure.edgecolor : 0.5
+
+### Text
+text.usetex : True
