@@ -3,13 +3,36 @@
 	email = gpleiss@gmail.com
 [core]
 	editor = vim
+	pager = less -FXRS -x2
 	autocrlf = input
+[gc]
+  auto = 1
 [color]
 	ui = true
 [alias]
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	st = status
 	co = checkout
 	ci = commit
+  br = branch
+	df = diff
+	ds = diff --staged
+	llog = log --date=local
+	flog = log --pretty=fuller --decorate
+	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lola = log --graph --decorate --oneline --all
+	blog = log origin/master... --left-right
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
 [apply]
-	whitespace = fix
+	whitespace = nowarn
+[branch]
+	autosetupmerge = true
+[rebase]
+	autosquash = true
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
