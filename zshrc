@@ -14,7 +14,9 @@ DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
 # Torch
-. $HOME/torch/install/bin/torch-activate
+if [ -d $HOME/torch ]; then
+  . $HOME/torch/install/bin/torch-activate
+fi
 
 # Editor
 export VISUAL='vim'
