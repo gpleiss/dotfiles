@@ -50,5 +50,12 @@ figure.figsize : 2.5, 2.5
 figure.facecolor : 1.0
 figure.edgecolor : 0.5
 
+### Bar plots
+hatch.linewidth : 0.1
+
 ### Text
 text.usetex : True
+
+### Animation
+animation.writer : html
+animation.html : html5
