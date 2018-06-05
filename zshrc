@@ -2,6 +2,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Path
+source ~/.zsh_aliases
+source ~/.zsh_variables
 source ~/.zsh_path
 
 # Completion options
@@ -13,10 +15,9 @@ ENABLE_CORRECTION="false"
 DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
-# Torch
-if [ -d $HOME/torch ]; then
-  . $HOME/torch/install/bin/torch-activate
-fi
+# Conda
+export CONDA_PREFIX="$(dirname `which conda`)/.."
+. $CONDA_PREFIX/etc/profile.d/conda.sh
 
 # Editor
 export VISUAL='vim'
@@ -34,5 +35,3 @@ zstyle :omz:plugins:ssh-agent identities id_rsa
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh_aliases
-source ~/.zsh_variables
