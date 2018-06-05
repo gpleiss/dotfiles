@@ -16,7 +16,9 @@ DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
 # Conda
-export CONDA_PREFIX="$(dirname `which conda`)/.."
+if [ -z $CONDA_PREFIX ]; then
+  export CONDA_PREFIX="$(dirname `which conda`)/.."
+fi
 . $CONDA_PREFIX/etc/profile.d/conda.sh
 
 # Editor
