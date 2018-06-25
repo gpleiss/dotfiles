@@ -16,3 +16,8 @@ ln -s jupyter ~/.jupyter
 
 # Matplotlib
 ln -s matplotlib ~/.matplotlib
+
+# Fonts
+if [ -d "$HOME/Library/Fonts/" ]; then
+  cp fonts/* $HOME/Library/Fonts
+fi
