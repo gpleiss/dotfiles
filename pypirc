@@ -1,0 +1,13 @@
+#~/.pypirc
+
+[distutils]
+index-servers =
+  pypitest
+
+[pypitest]
+repository: https://test.pypi.org/legacy/
+username: gpleiss
+
+[pypi]
+repository = https://pypi.python.org/pypi
+username = gpleiss
