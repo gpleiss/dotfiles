@@ -53,9 +53,6 @@ figure.edgecolor : 0.5
 ### Bar plots
 hatch.linewidth : 0.1
 
-### Text
-text.usetex : True
-
 ### Animation
 animation.writer : html
 animation.html : html5
