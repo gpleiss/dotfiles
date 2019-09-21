@@ -1,9 +1,9 @@
 ### Font
-font.family : Times, Serif
+font.family : Times New Roman, Serif
 font.size : 12.0
 
 ### Text
-text.usetex : True
+text.usetex : False
 
 ### Lines
 lines.linewidth : 2

@@ -15,12 +15,6 @@ ENABLE_CORRECTION="false"
 DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
-# Conda
-if [ -z $CONDA_PREFIX ]; then
-  export CONDA_PREFIX="$(dirname `which conda`)/.."
-fi
-. $CONDA_PREFIX/etc/profile.d/conda.sh
-
 # Editor
 export VISUAL='vim'
 if [[ -n $SSH_CONNECTION ]]; then
@@ -37,3 +31,9 @@ zstyle :omz:plugins:ssh-agent identities id_rsa
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 source $ZSH/oh-my-zsh.sh
+
+# Conda
+. $CONDA_PREFIX/etc/profile.d/conda.sh
+if [ -n $DEFAULT_CONDA_ENV ]; then
+  conda activate $DEFAULT_CONDA_ENV
+fi
