@@ -2,6 +2,7 @@
 
 [distutils]
 index-servers =
+  pypi
   pypitest
 
 [pypitest]
@@ -9,5 +10,5 @@ repository: https://test.pypi.org/legacy/
 username: gpleiss
 
 [pypi]
-repository = https://pypi.python.org/pypi
-username = gpleiss
+repository: https://pypi.python.org/pypi
+username: gpleiss
