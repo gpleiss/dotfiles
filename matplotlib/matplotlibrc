@@ -1,6 +1,6 @@
 ### Font
-font.family : Times New Roman, Serif
-font.size : 14.0
+font.family : serif
+font.serif : Computer Modern Roman, CMU Serif, Times New Roman
 
 ### Lines
 lines.linewidth : 2
@@ -22,7 +22,7 @@ xtick.minor.size     : 0      # minor tick size in points
 xtick.major.pad      : 6      # distance to major tick label in points
 xtick.minor.pad      : 6      # distance to the minor tick label in points
 xtick.color          : 333333 # color of the tick labels
-xtick.labelsize      : medium # fontsize of the tick labels
+xtick.labelsize      : small  # fontsize of the tick labels
 xtick.direction      : in     # direction: in or out
 
 ytick.major.size     : 0      # major tick size in points
@@ -30,7 +30,7 @@ ytick.minor.size     : 0      # minor tick size in points
 ytick.major.pad      : 6      # distance to major tick label in points
 ytick.minor.pad      : 6      # distance to the minor tick label in points
 ytick.color          : 333333 # color of the tick labels
-ytick.labelsize      : medium # fontsize of the tick labels
+ytick.labelsize      : small  # fontsize of the tick labels
 ytick.direction      : in     # direction: in or out
 
 ### Grid settings
@@ -51,7 +51,7 @@ figure.edgecolor : 0.5
 hatch.linewidth : 0.1
 
 ### Text
-text.usetex : True
+text.usetex : False
 text.latex.preamble : \usepackage{amsmath}
 
 ### Animation
