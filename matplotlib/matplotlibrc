@@ -51,8 +51,9 @@ figure.edgecolor : 0.5
 hatch.linewidth : 0.1
 
 ### Text
-text.usetex : False
+text.usetex : True
 text.latex.preamble : \usepackage{amsmath}
+font.size : 14
 
 ### Animation
 animation.writer : html
