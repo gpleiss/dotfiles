@@ -1,6 +1,12 @@
+# Make sure we have a config directory
+if [ ! -d $HOME/.config ]; then
+  mkdir .config
+fi
+
 # Zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ln -s zshrc ~/.zshrc
-touch ~/.zsh_path
+echo "export PATH=${PATH}" > ~/.zsh_path
 touch ~/.zsh_variables
 touch ~/.zsh_aliases
 
@@ -15,10 +21,13 @@ ln -s tmux/tmux.conf ~/.tmux.conf
 ln -s jupyter ~/.jupyter
 
 # Matplotlib
-ln -s matplotlib ~/.matplotlib
+ln -s matplotlib ~/.config/matplotlib
+
+# Neovim
+ln -s nvim ~/.config/nvim
 
 # Pypi
-ln -s matplotlib ~/.matplotlib
+ln -s pypirc ~/.pypirc
 
 # Fonts
 if [ -d "$HOME/Library/Fonts/" ]; then
