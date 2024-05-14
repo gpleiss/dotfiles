@@ -8,5 +8,5 @@
 	path = tmux/plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank
 [submodule "nvim/site/pack/std/start/copilot"]
-	path = nvim/site/pack/std/start/copilot
+	path = nvim/pack/std/start/copilot
 	url = https://github.com/github/copilot.vim
