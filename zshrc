@@ -16,9 +16,9 @@ DISABLE_AUTO_UPDATE="false"
 export UPDATE_ZSH_DAYS=13
 
 # Editor
-export VISUAL='vim'
+export VISUAL='nvim'
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else
   export EDITOR='gvim'
 fi
@@ -46,4 +46,12 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# >>> nvm initialize >>>
+if [ -d "$HOME/.nvm" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
+# <<< nvm initialize <<<
 
