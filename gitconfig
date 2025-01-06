@@ -20,7 +20,7 @@
 	flog = log --pretty=fuller --decorate
 	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lola = log --graph --decorate --oneline --all
-	blog = log origin/master... --left-right
+	blog = log origin/main... --left-right
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
@@ -32,3 +32,5 @@
 	autosquash = true
 [push]
 	default = simple
+[init]
+	defaultBranch = main
