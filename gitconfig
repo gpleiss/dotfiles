@@ -5,6 +5,7 @@
 	editor = vim
 	pager = less -FXRS -x2
 	autocrlf = input
+	excludesFile = ~/.dotfiles/gitignore
 [gc]
   auto = 1
 [color]
