@@ -39,8 +39,10 @@ touch ~/.zsh_aliases
 [ ! -e ~/.pypirc ] && ln -s $DOTFILES_DIR/pypirc ~/.pypirc
 
 # Claude
+[ ! -d ~/.claude ] && mkdir -p ~/.claude
 [ ! -e ~/.claude/settings.json ] && ln -s $DOTFILES_DIR/claude/settings.json ~/.claude/settings.json
 [ ! -e ~/.claude/CLAUDE.md ] && ln -s $DOTFILES_DIR/claude/CLAUDE.md ~/.claude/CLAUDE.md
+[ ! -e ~/.claude/agents ] && ln -s $DOTFILES_DIR/claude/agents ~/.claude/agents
 [ ! -e ~/.bashrc ] && ln -s $DOTFILES_DIR/bashrc ~/.bashrc
 
 # Fonts
