@@ -1,7 +1,20 @@
 {
+  "model": "opus[1m]",
   "permissions": {
     "allow": [
-      "Bash"
+      "Bash",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:pytorch.org)",
+      "WebFetch(domain:botorch.org)",
+      "WebFetch(domain:gpytorch.readthedocs.io)",
+      "WebFetch(domain:hydra.cc)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebFetch(domain:wandb.ai)",
+      "WebFetch(domain:docs.anthropic.com)"
     ],
     "ask": [
       "Bash(pip *)",
@@ -14,7 +27,11 @@
       "Bash(rm *)",
       "Bash(mv *)",
       "Bash(git push *)",
-      "Bash(git stash drop *)"
+      "Bash(git stash drop *)",
+      "Bash(brew *)",
+      "Bash(kill *)",
+      "Bash(pkill *)",
+      "Bash(git rebase *)"
     ],
     "deny": [
       "Bash(git reset --hard *)",
@@ -29,7 +46,15 @@
       "Bash(chmod -R *)",
       "Bash(chown *)",
       "Bash(python -m http.server*)",
-      "Bash(ngrok *)"
+      "Bash(ngrok *)",
+      "Bash(launchctl *)",
+      "Bash(defaults write *)",
+      "Bash(diskutil *)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "~/research",
+      "~/workspace"
     ]
   }
 }
