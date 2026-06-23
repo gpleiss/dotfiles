@@ -40,6 +40,7 @@ touch ~/.zsh_aliases
 
 # Claude
 [ ! -e ~/.claude/settings.json ] && ln -s $DOTFILES_DIR/claude/settings.json ~/.claude/settings.json
+[ ! -e ~/.claude/CLAUDE.md ] && ln -s $DOTFILES_DIR/claude/CLAUDE.md ~/.claude/CLAUDE.md
 [ ! -e ~/.bashrc ] && ln -s $DOTFILES_DIR/bashrc ~/.bashrc
 
 # Fonts
