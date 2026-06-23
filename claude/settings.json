@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash"
+    ],
+    "ask": [
+      "Bash(pip *)",
+      "Bash(conda install *)",
+      "Bash(conda create *)",
+      "Bash(conda remove *)",
+      "Bash(npm *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(rm *)",
+      "Bash(mv *)",
+      "Bash(git push *)",
+      "Bash(git stash drop *)"
+    ],
+    "deny": [
+      "Bash(git reset --hard *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git clean -f *)",
+      "Bash(git branch -D *)",
+      "Bash(git checkout -- .)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~*)",
+      "Bash(sudo *)",
+      "Bash(chmod -R *)",
+      "Bash(chown *)",
+      "Bash(python -m http.server*)",
+      "Bash(ngrok *)"
+    ]
+  }
+}

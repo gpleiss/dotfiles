@@ -38,6 +38,10 @@ touch ~/.zsh_aliases
 # Pypi
 [ ! -e ~/.pypirc ] && ln -s $DOTFILES_DIR/pypirc ~/.pypirc
 
+# Claude
+[ ! -e ~/.claude/settings.json ] && ln -s $DOTFILES_DIR/claude/settings.json ~/.claude/settings.json
+[ ! -e ~/.bashrc ] && ln -s $DOTFILES_DIR/bashrc ~/.bashrc
+
 # Fonts
 if [ -d "$HOME/Library/Fonts/" ]; then
   cp fonts/* $HOME/Library/Fonts
